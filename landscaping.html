@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landscaping | ODEX Construction &amp; Landscaping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #04091a; --bg2: #071020; --bg3: #0e1d32;
+      --accent: #3d8ef8; --border: #142640; --text: #ffffff; --muted: #7090b0;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
+
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 100; height: 68px;
+      display: flex; align-items: center; justify-content: space-between; padding: 0 6%;
+      background: rgba(4,9,26,0.96); border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+    }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: .14em; color: var(--accent); text-decoration: none; }
+    .nav-links { list-style: none; display: flex; gap: 2.25rem; }
+    .nav-links a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-call { background: var(--accent); color: #fff !important; padding: .45rem 1.1rem; border-radius: 2px; font-weight: 600 !important; }
+    .nav-call:hover { background: #5aa3ff !important; }
+
+    .page-hero {
+      min-height: 55vh; display: flex; align-items: flex-end;
+      padding: 68px 6% 4rem; position: relative; overflow: hidden;
+      background: linear-gradient(135deg, #04091a 0%, #071a3a 60%, #0a2050 100%);
+    }
+    .page-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .35; }
+    .page-hero-content { position: relative; z-index: 1; }
+    .back-link { display: inline-flex; align-items: center; gap: .5rem; color: var(--accent); text-decoration: none; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.5rem; transition: opacity .2s; }
+    .back-link:hover { opacity: .7; }
+    h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .95; letter-spacing: .02em; }
+    .page-sub { color: var(--muted); font-size: 1rem; max-width: 540px; margin-top: 1rem; line-height: 1.75; }
+
+    .content { padding: 5rem 6%; max-width: 860px; }
+    .content h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; letter-spacing: .04em; margin-bottom: 1rem; color: var(--accent); }
+    .content p { color: var(--muted); font-size: .95rem; line-height: 1.8; margin-bottom: 1.5rem; }
+    .content ul { list-style: none; display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.5rem; }
+    .content ul li { display: flex; align-items: center; gap: .875rem; color: var(--muted); font-size: .9rem; }
+    .content ul li::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
+
+    .cta-bar { background: var(--bg2); border-top: 1px solid var(--border); padding: 3rem 6%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
+    .cta-bar h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: .04em; }
+    .cta-bar p { color: var(--muted); font-size: .9rem; margin-top: .25rem; }
+    .btn { display: inline-block; padding: .875rem 2rem; font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background .2s; }
+    .btn-blue { background: var(--accent); color: #fff; }
+    .btn-blue:hover { background: #5aa3ff; }
+
+    footer { padding: 2rem 6%; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: .12em; color: var(--accent); }
+    footer p { color: var(--muted); font-size: .8rem; }
+
+    @media (max-width: 680px) { .nav-links { display: none; } .cta-bar { flex-direction: column; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">ODEX</a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="tel:1800296339" class="nav-call">1800 BY ODEX</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero">
+    <img src="images/landscaping.jpg" alt="Landscaping" />
+    <div class="page-hero-content">
+      <a href="index.html#services" class="back-link">&#8592; Back to Services</a>
+      <h1>Landscaping</h1>
+      <p class="page-sub">Outdoor spaces designed and built to be as functional as they are beautiful.</p>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>What We Do</h2>
+    <p>ODEX transforms outdoor spaces across NSW with custom landscaping solutions tailored to each property. From lush garden designs to structural hardscaping, we bring creativity and craftsmanship to every project.</p>
+    <p>We source quality materials and plants suited to the NSW climate, ensuring your outdoor space looks stunning and stands the test of time.</p>
+
+    <h2>Our Services Include</h2>
+    <ul>
+      <li>Custom garden design &amp; planting</li>
+      <li>Lawn installation &amp; turf</li>
+      <li>Irrigation systems</li>
+      <li>Paving, driveways &amp; pathways</li>
+      <li>Retaining walls</li>
+      <li>Patios &amp; outdoor entertaining areas</li>
+    </ul>
+  </div>
+
+  <div class="cta-bar">
+    <div>
+      <h3>Transform Your Outdoor Space</h3>
+      <p>Get in touch for a free, no-obligation quote.</p>
+    </div>
+    <a href="index.html#contact" class="btn btn-blue">Request a Quote</a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">ODEX</div>
+    <p>Construction &amp; Landscaping &mdash; NSW Australia</p>
+    <p>&copy; 2026 ODEX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -257,8 +257,13 @@
       padding: 0;
       transition: background .25s;
       overflow: hidden;
+      display: block;
+      text-decoration: none;
+      cursor: pointer;
     }
     .service-card:hover { background: var(--bg3); }
+    .service-card:hover .service-img { transform: scale(1.03); }
+    .service-img { transition: transform .4s ease; }
 
     .service-img-wrap { position: relative; }
 
@@ -515,24 +520,24 @@
       <p class="section-sub">ODEX handles every step of the way.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card">
+      <a href="residential.html" class="service-card">
         <div class="service-img-wrap">
           <img src="images/residential.jpg" alt="Residential" class="service-img" />
           <span class="service-label">Residential</span>
         </div>
-      </div>
-      <div class="service-card">
+      </a>
+      <a href="commercial.html" class="service-card">
         <div class="service-img-wrap">
           <img src="images/commercial.jpg" alt="Commercial" class="service-img" />
           <span class="service-label">Commercial</span>
         </div>
-      </div>
-      <div class="service-card">
+      </a>
+      <a href="landscaping.html" class="service-card">
         <div class="service-img-wrap">
           <img src="images/landscaping.jpg" alt="Landscaping" class="service-img" />
           <span class="service-label">Landscaping</span>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -622,12 +627,9 @@
         <input type="email" name="email" placeholder="Email Address" required />
         <select name="service">
           <option value="" disabled selected>Service Required</option>
-          <option>New Construction</option>
-          <option>Renovation / Extension</option>
-          <option>Landscaping &amp; Gardens</option>
-          <option>Paving &amp; Hardscaping</option>
-          <option>Outdoor Living</option>
-          <option>Other</option>
+          <option>Residential</option>
+          <option>Commercial</option>
+          <option>Landscaping</option>
         </select>
         <textarea name="message" placeholder="Tell us about your project..."></textarea>
         <button type="submit" class="btn btn-blue" style="border:none;cursor:pointer;width:100%;text-align:center;">Send Enquiry</button>
