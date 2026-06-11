@@ -12,13 +12,13 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg:      #0a0a0a;
-      --bg2:     #111111;
-      --bg3:     #1a1a1a;
-      --accent:  #c8a84b;
-      --border:  #242424;
+      --bg:      #04091a;
+      --bg2:     #071020;
+      --bg3:     #0e1d32;
+      --accent:  #3d8ef8;
+      --border:  #142640;
       --text:    #ffffff;
-      --muted:   #888888;
+      --muted:   #7090b0;
     }
 
     html { scroll-behavior: smooth; }
@@ -71,12 +71,12 @@
 
     .nav-call {
       background: var(--accent);
-      color: #000 !important;
+      color: #fff !important;
       padding: 0.45rem 1.1rem;
       border-radius: 2px;
       font-weight: 600 !important;
     }
-    .nav-call:hover { background: #d6b455 !important; color: #000 !important; }
+    .nav-call:hover { background: #5aa3ff !important; color: #fff !important; }
 
     /* ── HERO ── */
     .hero {
@@ -100,7 +100,7 @@
       position: absolute;
       top: -20%; right: -10%;
       width: 700px; height: 700px;
-      background: radial-gradient(circle, rgba(200,168,75,.12) 0%, transparent 65%);
+      background: radial-gradient(circle, rgba(61,142,248,.15) 0%, transparent 65%);
       pointer-events: none;
     }
 
@@ -166,8 +166,8 @@
       border-radius: 2px;
       transition: background .2s, border-color .2s, color .2s;
     }
-    .btn-gold   { background: var(--accent); color: #000; }
-    .btn-gold:hover { background: #d6b455; }
+    .btn-gold   { background: var(--accent); color: #fff; }
+    .btn-gold:hover { background: #5aa3ff; }
     .btn-outline { border: 1px solid var(--border); color: var(--text); }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
@@ -594,7 +594,7 @@
           <option>Other</option>
         </select>
         <textarea name="message" placeholder="Tell us about your project..."></textarea>
-        <button type="submit" class="btn btn-gold" style="border:none;cursor:pointer;width:100%;text-align:center;">Send Enquiry</button>
+        <button type="submit" class="btn btn-gold" style="border:none;cursor:pointer;width:100%;text-align:center;color:#fff;">Send Enquiry</button>
       </form>
     </div>
   </section>
