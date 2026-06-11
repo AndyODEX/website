@@ -260,15 +260,26 @@
     }
     .service-card:hover { background: var(--bg3); }
 
+    .service-img-wrap { position: relative; }
+
     .service-img {
       width: 100%;
-      height: 200px;
+      height: 280px;
       object-fit: cover;
       display: block;
       background: var(--bg3);
     }
 
-    .service-card-body { padding: 2.5rem; }
+    .service-label {
+      position: absolute;
+      top: 1rem;
+      left: 1.25rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: .06em;
+      color: #fff;
+      text-shadow: 0 2px 8px rgba(0,0,0,.7);
+    }
 
     .service-num {
       font-family: 'Bebas Neue', sans-serif;
@@ -505,27 +516,21 @@
     </div>
     <div class="services-grid">
       <div class="service-card">
-        <img src="images/residential.jpg" alt="Residential construction" class="service-img" />
-        <div class="service-card-body">
-          <span class="service-num">01</span>
-          <h3>Residential</h3>
-          <p>From new builds and knock-down rebuilds to extensions and full renovations, we manage every stage of the process. We work with heritage properties and apply careful product selection to deliver outstanding results with a refined aesthetic.</p>
+        <div class="service-img-wrap">
+          <img src="images/residential.jpg" alt="Residential" class="service-img" />
+          <span class="service-label">Residential</span>
         </div>
       </div>
       <div class="service-card">
-        <img src="images/commercial.jpg" alt="Commercial construction" class="service-img" />
-        <div class="service-card-body">
-          <span class="service-num">02</span>
-          <h3>Commercial</h3>
-          <p>End-to-end commercial construction and fitouts built to the highest standard. We handle planning, approvals, and delivery — keeping your project on time and on budget from the first sod to final handover.</p>
+        <div class="service-img-wrap">
+          <img src="images/commercial.jpg" alt="Commercial" class="service-img" />
+          <span class="service-label">Commercial</span>
         </div>
       </div>
       <div class="service-card">
-        <img src="images/landscaping.jpg" alt="Landscaping" class="service-img" />
-        <div class="service-card-body">
-          <span class="service-num">03</span>
-          <h3>Landscaping</h3>
-          <p>Custom garden design, lush planting, irrigation, paving, retaining walls, and patios — we transform outdoor spaces into environments that are as functional as they are beautiful.</p>
+        <div class="service-img-wrap">
+          <img src="images/landscaping.jpg" alt="Landscaping" class="service-img" />
+          <span class="service-label">Landscaping</span>
         </div>
       </div>
     </div>
