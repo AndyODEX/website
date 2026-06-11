@@ -626,8 +626,12 @@
     // Nav: add solid background once user scrolls past landing
     const nav   = document.getElementById('main-nav');
     const hero  = document.querySelector('.hero-landing');
+    const heroLogo = document.querySelector('.hero-logo-mark');
+
     const onScroll = () => {
-      nav.classList.toggle('scrolled', window.scrollY > hero.offsetHeight - 80);
+      const scrollY = window.scrollY;
+      nav.classList.toggle('scrolled', scrollY > hero.offsetHeight - 80);
+      heroLogo.style.transform = `translateY(${scrollY * 0.5}px)`;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
 
