@@ -576,22 +576,22 @@
             <div class="ci-value"><a href="mailto:info@odex.com.au">info@odex.com.au</a></div>
           </div>
         </div>
-        <div class="ci" style="flex-direction: column; gap: .6rem;">
-          <div style="display:flex; gap:1.25rem; align-items:center;">
-            <div class="ci-icon">&#128205;</div>
-            <div>
-              <span class="ci-label">Location</span>
-              <div class="ci-value">Sydney, NSW, Australia</div>
-            </div>
+        <div class="ci">
+          <div class="ci-icon">&#128205;</div>
+          <div>
+            <span class="ci-label">Location</span>
+            <div class="ci-value">Sydney, NSW, Australia</div>
+            <a
+              href="https://maps.google.com/?q=Sydney,NSW,Australia"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="display:inline-flex;align-items:center;gap:.5rem;margin-top:.6rem;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-decoration:none;transition:opacity .2s;"
+              onmouseover="this.style.opacity='.7'"
+              onmouseout="this.style.opacity='1'"
+            >
+              &#128506; View on Google Maps
+            </a>
           </div>
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=150.5209%2C-34.1183%2C151.8975%2C-33.4233&amp;layer=mapnik&amp;marker=-33.8688%2C151.2093"
-            width="100%"
-            height="220"
-            style="border:1px solid var(--border); border-radius:2px; filter:invert(0.85) hue-rotate(180deg); display:block;"
-            loading="lazy"
-            title="ODEX location — Sydney NSW"
-          ></iframe>
         </div>
       </div>
       <form action="mailto:info@odex.com.au" method="POST" enctype="text/plain">
