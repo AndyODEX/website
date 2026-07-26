@@ -4,14 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Commercial | ODEX Construction &amp; Landscaping</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Z0CVPF6L1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2Z0CVPF6L1');
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
-      --bg: #04091a; --bg2: #071020; --bg3: #0e1d32;
-      --accent: #3d8ef8; --border: #142640; --text: #ffffff; --muted: #7090b0;
+      --bg: #ffffff; --bg2: #ffffff; --bg3: #ffffff;
+      --accent: rgba(61, 142, 248, 0.68); --accent-solid: rgb(20, 82, 176); --border: #82aed9; --text: #06263c; --muted: #3a5570;
     }
     html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.6; }
@@ -19,14 +26,16 @@
     nav {
       position: fixed; top: 0; width: 100%; z-index: 100; height: 68px;
       display: flex; align-items: center; justify-content: space-between; padding: 0 6%;
-      background: rgba(4,9,26,0.96); border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.96); border-bottom: 1px solid var(--border);
       backdrop-filter: blur(12px);
     }
-    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: .14em; color: var(--accent); text-decoration: none; }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 26px; width: auto; display: block; }
     .nav-links { list-style: none; display: flex; gap: 2.25rem; }
-    .nav-links a { color: rgba(255,255,255,.7); text-decoration: none; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a { color: var(--text); text-decoration: none; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
     .nav-links a:hover { color: var(--accent); }
-    .nav-call { background: var(--accent); color: #fff !important; padding: .45rem 1.1rem; border-radius: 2px; font-weight: 600 !important; }
+    .nav-call { background: var(--accent-solid); color: #fff !important; padding: .45rem 1.1rem; border-radius: 2px; font-weight: 600 !important; display: inline-flex; align-items: center; gap: .35rem; }
+    .nav-call img { height: 12px; width: auto; display: block; }
     .nav-call:hover { background: #5aa3ff !important; }
 
     .page-hero {
@@ -38,8 +47,8 @@
     .page-hero-content { position: relative; z-index: 1; }
     .back-link { display: inline-flex; align-items: center; gap: .5rem; color: var(--accent); text-decoration: none; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.5rem; transition: opacity .2s; }
     .back-link:hover { opacity: .7; }
-    h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .95; letter-spacing: .02em; }
-    .page-sub { color: var(--muted); font-size: 1rem; max-width: 540px; margin-top: 1rem; line-height: 1.75; }
+    h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .95; letter-spacing: .02em; color: #ffffff; }
+    .page-sub { color: rgba(255,255,255,.7); font-size: 1rem; max-width: 540px; margin-top: 1rem; line-height: 1.75; }
 
     .content { padding: 5rem 6%; max-width: 860px; }
     .content h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; letter-spacing: .04em; margin-bottom: 1rem; color: var(--accent); }
@@ -52,11 +61,12 @@
     .cta-bar h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: .04em; }
     .cta-bar p { color: var(--muted); font-size: .9rem; margin-top: .25rem; }
     .btn { display: inline-block; padding: .875rem 2rem; font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; border-radius: 2px; transition: background .2s; }
-    .btn-blue { background: var(--accent); color: #fff; }
+    .btn-blue { background: var(--accent-solid); color: #fff; }
     .btn-blue:hover { background: #5aa3ff; }
 
     footer { padding: 2rem 6%; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: .12em; color: var(--accent); }
+    .footer-logo { display: flex; align-items: center; text-decoration: none; }
+    .footer-logo img { height: 20px; width: auto; display: block; }
     footer p { color: var(--muted); font-size: .8rem; }
 
     @media (max-width: 680px) { .nav-links { display: none; } .cta-bar { flex-direction: column; } }
@@ -65,17 +75,17 @@
 <body>
 
   <nav>
-    <a href="index.html" class="logo">ODEX</a>
+    <a href="index.html" class="logo"><img src="images/odex-logo.png" alt="ODEX"></a>
     <ul class="nav-links">
       <li><a href="index.html#services">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
       <li><a href="index.html#about">About</a></li>
       <li><a href="index.html#contact">Contact</a></li>
-      <li><a href="tel:1800296339" class="nav-call">1800 BY ODEX</a></li>
+      <li><a href="tel:1800296339" class="nav-call">1800 BY <img src="images/odex-logo-white.png" alt="ODEX"></a></li>
     </ul>
   </nav>
 
   <div class="page-hero">
-    <img src="images/commercial.jpg" alt="Commercial construction" />
     <div class="page-hero-content">
       <a href="index.html#services" class="back-link">&#8592; Back to Services</a>
       <h1>Commercial</h1>
@@ -108,7 +118,7 @@
   </div>
 
   <footer>
-    <div class="footer-logo">ODEX</div>
+    <a href="index.html" class="footer-logo"><img src="images/odex-logo.png" alt="ODEX"></a>
     <p>Construction &amp; Landscaping &mdash; NSW Australia</p>
     <p>&copy; 2026 ODEX. All rights reserved.</p>
   </footer>
