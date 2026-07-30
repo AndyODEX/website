@@ -774,7 +774,7 @@
   <div class="mobile-nav" id="mobile-nav">
     <button class="mobile-close" id="mobile-close" aria-label="Close menu">&#10005;</button>
     <a href="#services" class="mobile-nav-link">Services</a>
-    <a href="projects.html" class="mobile-nav-link">Projects</a>
+<!-- <a href="projects.html" class="mobile-nav-link">Projects</a> disabled 2026-07-29 -->
     <a href="#about"    class="mobile-nav-link">About</a>
     <a href="#contact"  class="mobile-nav-link">Contact</a>
     <a href="tel:1800296339" style="color:var(--accent);font-size:1.2rem;letter-spacing:0.1em;">1800 BY ODEX</a>
@@ -784,7 +784,7 @@
     <a href="index.html" class="logo"><img src="images/odex-logo.png" alt="ODEX"></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
+<!-- <li><a href="projects.html">Projects</a></li> disabled 2026-07-29 -->
       <li><a href="#about">About</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="tel:1800296339" class="nav-call">1800 BY <img src="images/odex-logo-white.png" alt="ODEX"></a></li>
@@ -836,12 +836,14 @@
       </a>
       <a href="commercial.html" class="service-card">
         <div class="service-img-wrap">
+          <img src="images/commercial-finished-corridor.jpg" alt="Commercial fit-out" class="service-img" />
           <span class="service-label">Commercial</span>
           <span class="service-arrow">View Service &#8594;</span>
         </div>
       </a>
       <a href="landscaping.html" class="service-card">
         <div class="service-img-wrap">
+          <img src="images/landscaping-drone-install.jpg" alt="Landscaping install, aerial view" class="service-img" />
           <span class="service-label">Landscaping</span>
           <span class="service-arrow">View Service &#8594;</span>
         </div>
@@ -856,7 +858,7 @@
     </div>
   </section>
 
-  <!-- FIELD -->
+  <!-- FIELD — disabled 2026-07-29, didn't look as good as hoped, re-enable by uncommenting
   <section id="field">
     <div class="field-bg-wrap" id="field-bg-wrap">
       <img src="images/field-bg-v2.jpg" alt="Rural land clearing site" />
@@ -874,8 +876,9 @@
       <p>Land clearing, fencing, dams and access roads — the same ODEX standard, out where the work is hardest.</p>
     </div>
   </section>
+  -->
 
-  <!-- FLYOVER -->
+  <!-- FLYOVER — disabled 2026-07-29, didn't look as good as hoped, re-enable by uncommenting
   <section id="flyover">
     <canvas id="flyover-canvas"></canvas>
     <div class="flyover-caption">
@@ -885,6 +888,7 @@
     </div>
     <div class="flyover-progress" id="flyover-progress"></div>
   </section>
+  -->
 
   <!-- ABOUT -->
   <section id="about">
@@ -1042,9 +1046,10 @@
       link.addEventListener('click', () => mobileNav.classList.remove('open'));
     });
 
-    // ── FIELD parallax — Apple product-page style: PIN the section so scroll
-    // is "captured" for a stretch, and the whole sequence plays out on a single
-    // scrubbed timeline (0 → 1) before the page is allowed to scroll past it ──
+    // ── FIELD + FLYOVER scroll effects — disabled 2026-07-29, didn't look as
+    // good as hoped. Sections are commented out above too. Re-enable both
+    // together by uncommenting this whole block and the two <section>s. ──
+    /*
     if (window.gsap && window.ScrollTrigger) {
       gsap.registerPlugin(ScrollTrigger);
       const mm = gsap.matchMedia();
@@ -1129,6 +1134,7 @@
         });
       });
     }
+    */
   </script>
 
 </body>
